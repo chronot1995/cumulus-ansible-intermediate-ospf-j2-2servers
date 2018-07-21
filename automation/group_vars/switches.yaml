@@ -18,8 +18,6 @@ node:
         vni:
           vlan:
     ports:
-      - swp1
-      - swp2
       - swp10
     lacp:
       interfaces:
@@ -69,8 +67,6 @@ node:
         vni:
           vlan:
     ports:
-      - swp1
-      - swp2
       - swp10
     lacp:
       interfaces:

@@ -34,6 +34,12 @@ iface {{interface}}
 {% endif %}
 {% endfor %}
 
+{% for interface in node[inventory_hostname]["routing"]["ospf"]["neighbors"] -%}
+auto {{interface}}
+iface {{interface}}
+   address {{node[inventory_hostname]["routing"]["lo"]}}
+{% endfor %}
+
 {%- for interface in node[inventory_hostname]["ports"] -%}
 auto {{interface}}
 iface {{interface}}
