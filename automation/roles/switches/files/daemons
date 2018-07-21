@@ -22,9 +22,9 @@
 # that can be changed via /etc/frr/daemons.conf.
 #
 zebra=yes
-bgpd=yes
-ospfd=no
-ospf6d=no
+bgpd=no
+ospfd=yes
+ospf6d=yes
 ripd=no
 ripngd=no
 isisd=no
