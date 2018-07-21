@@ -32,15 +32,15 @@ node:
     routing:
       lo: 10.1.1.1/32
       ospf:
-        area:
+        area: 0
         neighbors:
+          - swp1
+          - swp2
       bgp:
-        asn: 65111
+        asn:
         underlay:
           external:
             peers:
-              - swp1
-              - swp2
           internal:
             peers:
       svi:
@@ -83,15 +83,15 @@ node:
     routing:
       lo: 10.2.2.2/32
       ospf:
-        area:
+        area: 0
         neighbors:
+          - swp1
+          - swp2
       bgp:
-        asn: 65222
+        asn:
         underlay:
           external:
             peers:
-              - swp1
-              - swp2
           internal:
             peers:
       svi:
