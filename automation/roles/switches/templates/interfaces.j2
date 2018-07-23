@@ -72,7 +72,7 @@ iface {{vlanint}}
     vlan-raw-device bridge
 {% endfor %}
 
-{# }{% if global_vlan_list != [] %}
+{% if global_vlan_list != [] %}
 auto bridge
 iface bridge
     bridge-ports {{ bridge_ports | unique | sort | join(" ") }}
@@ -80,4 +80,3 @@ iface bridge
     bridge-vids {{ global_vlan_list | unique | sort | join(" ") }}
     bridge-vlan-aware yes
 {% endif %}
-#}
