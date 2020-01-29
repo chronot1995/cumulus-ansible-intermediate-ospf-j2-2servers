@@ -1,2 +1,2 @@
 #!/bin/bash
-ansible-playbook int-ansible-training-ospf-j2-2servers.yml
+ansible-playbook cumulus-ansible-intermediate-ospf-j2-2servers.yml

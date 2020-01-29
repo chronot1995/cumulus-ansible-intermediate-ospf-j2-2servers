@@ -115,7 +115,7 @@ This will run the automation script and configure the environment.
 Helpful NCLU troubleshooting commands:
 
 - net show route
-- net show bgp summary
+- net show ospf database
 - net show interface | grep -i UP
 - net show lldp
 
